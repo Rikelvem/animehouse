@@ -6,12 +6,13 @@
     --font-corpo: 'Spline Sans', sans-serif;
 
     --branco: #FFFFFF;
-    --branco-2: #F2F2F2;
+    --branco-2: #E8E8E8;
     --preto: #111517;
     --cinza: #858585;
-    --metal: #2b3945;
-    --metal-2:#202c37;
+    --metal: #0e0e0e;
+    --metal-2:#545454;
     --vermelho: #D13328;
+    --roxo: #8a2be2;
 }
 
 * {
@@ -19,7 +20,7 @@
 }
 
 body {
-    background: var(--cinza);
+    background: var(--branco-2);
 }
 
 
@@ -43,7 +44,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 15px 15px 0 0;
+    border-radius: 20px 20px 0 0;
 }
 
 .navegacao ul {
@@ -107,7 +108,7 @@ body {
     height: 70px;
     background: var(--vermelho);
     border-radius: 50%;
-    border: 6px solid var(--cinza);
+    border: 6px solid var(--branco-2);
     transition: 0.5s;
 }
 
@@ -120,7 +121,7 @@ body {
     height: 20px;
     background: transparent;
     border-top-right-radius: 20px;
-    box-shadow: 0px -10px 0 0 var(--cinza);
+    box-shadow: 0px -10px 0 0 var(--branco-2);
 }
 
 .indicador::after {
@@ -132,7 +133,7 @@ body {
     height: 20px;
     background: transparent;
     border-top-left-radius: 20px;
-    box-shadow: 0px -10px 0 0 var(--cinza);
+    box-shadow: 0px -10px 0 0 var(--branco-2);
 }
 
 .navegacao ul li:nth-child(1).ativo ~ .indicador {

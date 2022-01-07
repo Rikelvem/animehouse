@@ -1,3 +1,5 @@
+// MENU BOLADO
+
 const lista = document.querySelectorAll('.lista');
 function ativoLink(){
     lista.forEach((item) =>
