@@ -30,10 +30,10 @@ const cabecalhoClass = 'mostrar__ativo';
 function cabecalhoScroll() {
     const windowTop = window.pageYOffset;
     cabecalho.forEach(function(element) {
-        if(windowTop > 20) {
+        if(windowTop > 10) {
             element.classList.add(cabecalhoClass);
         }
-        if(windowTop < 20) {
+        if(windowTop < 10) {
             element.classList.remove(cabecalhoClass);
         }
     })
@@ -47,11 +47,23 @@ window.addEventListener('scroll', debounce(function() {
 
 // MENU BOTAO
 
+const menuAberto = document.querySelector('.menu__lista');
 let menuToggle = document.querySelector('.menu__botao');
 menuToggle.onclick = function (){
     menuToggle.classList.toggle('aberto');
+    menuAberto.classList.toggle('aberto');
 } 
 
+let listaMenu = document.querySelectorAll('.lista__menu');
+for (let i=0; i<listaMenu.length; i++){
+    listaMenu[i].onclick = function() {
+    let j = 0;
+    while(j < listaMenu.length){
+        listaMenu[j++].className = 'lista__menu';
+    }
+    listaMenu[i].className = 'lista__menu selecionado';
+    }
+}
 
 // TOGGLE DARKMODE
 

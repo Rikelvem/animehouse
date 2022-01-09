@@ -35,8 +35,9 @@
 }
 
 body {
-    background: var(--branco-2);
+    background: #D13328;
     margin-bottom: 3000px;
+    overflow-x: hidden;
 }
 
 body.darkmode__ativo {
@@ -193,13 +194,14 @@ body.darkmode__ativo {
 /* -- CABECALHO 2 -- */
 
 .cabecalho-2 {
+    position: relative;
     background: transparent;
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
     padding: 24px 32px;
-    background: #222;
+    background: rgba(0, 0, 0, 0.8);
 }
 
 .cabecalho-2 h2 {
@@ -260,6 +262,80 @@ body.darkmode__ativo {
 
 .menu__botao.aberto span:nth-child(3) {
     transform: translateX(60px);
+}
+
+.menu__lista {
+    position: absolute;
+    top: 88px;
+    right: 0px;
+    width: 280px;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    box-sizing: initial;
+    border-right: 5px solid rgba(255, 255, 255, 1);
+    transition: 0.5s;
+    overflow-x: hidden;
+    font-family: var(--font-corpo);
+    transform: translateX(100%);
+}
+
+.menu__lista.aberto {
+    transform: translateX(0);
+}
+
+.menu__lista ul {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding-left: 35px;
+    padding-top: 40px;
+}
+
+.menu__lista ul li {
+    position: relative;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.menu__lista ul li.selecionado {
+    background: rgba(255, 255, 255, 1);
+}
+
+.menu__lista ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    color: #FFF;
+    margin-bottom: 10px;
+}
+
+.menu__lista ul li.selecionado a {
+    color: #222;
+}
+
+.menu__lista ul li a .icone__menu {
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 70px;
+    text-align: center;
+}
+
+.menu__lista ul li a .icone__menu ion-icon {
+    font-size: 1.8em;
+}
+
+.menu__lista ul li a .texto__menu {
+    position: relative;
+    display: block;
+    padding-left: 10px;
+    height: 60px;
+    line-height: 55px;
+    white-space: normal;
 }
 
 /* -- CHAMADA -- */
