@@ -1,8 +1,8 @@
 /* -- BASE -- */
 
 :root {
-    --font-titulo: 'Yanone Kaffeesatz', sans-serif;
-    --font-sub-titulo: 'Josefin Sans', sans-serif;
+    --font-titulo: 'Oswald', sans-serif;
+    --font-sub-titulo: 'Roboto Condensed', sans-serif;
     --font-corpo: 'Spline Sans', sans-serif;
 
     --branco: #FFFFFF;
@@ -16,8 +16,8 @@
 }
 
 :root.darkmode__ativo {
-    --font-titulo: 'Yanone Kaffeesatz', sans-serif;
-    --font-sub-titulo: 'Josefin Sans', sans-serif;
+    --font-titulo: 'Oswald', sans-serif;
+    --font-sub-titulo: 'Roboto Condensed', sans-serif;
     --font-corpo: 'Spline Sans', sans-serif;
 
     --branco: #0e0e0e;
@@ -36,6 +36,7 @@
 
 body {
     background: var(--branco-2);
+    margin-bottom: 3000px;
 }
 
 body.darkmode__ativo {
@@ -57,9 +58,15 @@ body.darkmode__ativo {
     justify-content: center;
     align-items: center;
     position: fixed;
-    bottom: 0;
+    bottom: -100vh;
     left: 0;
     font-family: var(--font-corpo);
+    transition: ease-in 0.3s;
+}
+
+.cabecalho.mostrar__ativo {
+    bottom: 0;
+    transition: ease-out 0.3s;
 }
 
 .navegacao {
@@ -182,6 +189,87 @@ body.darkmode__ativo {
     transform: translateX(calc(70px * 4));
 }
 
+
+/* -- CABECALHO 2 -- */
+
+.cabecalho-2 {
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 24px 32px;
+    background: #222;
+}
+
+.cabecalho-2 h2 {
+    font-family: var(--font-titulo);
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.cabecalho-2 .icone {
+    font-size: 32px;
+    color: #FFF;
+}
+
+
+/* -- CHAMADA -- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* -- MODAL DARK MODE -- */
 
 .modal__container {
@@ -191,12 +279,16 @@ body.darkmode__ativo {
     z-index: 2000;
     width: 100vw;
     height: 100vh;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
     font-family: var(--font-corpo);
+}
+
+.modal__container.mostrar {
+    display: flex;
 }
 
 .modal {
@@ -207,7 +299,7 @@ body.darkmode__ativo {
     text-align: center;
     background: var(--branco);
     width: 320px;
-    height: 350px;
+    height: 380px;
     border-radius: 10px;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.10);
     box-sizing: border-box;
@@ -216,11 +308,27 @@ body.darkmode__ativo {
     color: var(--preto);
 }
 
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 60px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.mostrar .modal {
+    animation: modal .3s;
+}
+
 .modal button {
     position: absolute;
     top: 20px;
     right: 20px;
-    color: var(--branco);
+    color: #FFF;
     font-size: 18px;
     width: 25px;
     height: 25px;
@@ -231,7 +339,7 @@ body.darkmode__ativo {
 .modal h2 {
     font-family: var(--font-corpo);
     font-size: 30px;
-    margin-bottom: 30px;
+    line-height: 100px;
     font-weight: 800;
     color: var(--vermelho);
 }
@@ -277,9 +385,9 @@ body.darkmode__ativo {
 
 .modal #toggle.darkmode__ativo .indicador__darkmode {
     left: 60px;
-    background: linear-gradient(to bottom, var(--branco-2), var(--branco));
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5),
-                inset 0 4px 8px rgba(0, 0, 0, 0.2),
+    background: var(--branco);
+    box-shadow: 0 8px 60px rgba(0, 0, 0, 0.5),
+                inset 0 8px 8px rgba(0, 0, 0, 0.2),
                 inset 0 -4px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -290,6 +398,6 @@ body.darkmode__ativo {
     color: #FFF;
     background-color: var(--vermelho);
     width: 135px;
-    height: 35px;
+    height: 45px;
     border-radius: 20px;
 }
