@@ -45,6 +45,14 @@ window.addEventListener('scroll', debounce(function() {
 }, 200));
 }
 
+// MENU BOTAO
+
+let menuToggle = document.querySelector('.menu__botao');
+menuToggle.onclick = function (){
+    menuToggle.classList.toggle('aberto');
+} 
+
+
 // TOGGLE DARKMODE
 
 const body = document.querySelector('body');
