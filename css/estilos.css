@@ -13,6 +13,8 @@
     --metal-2:#545454;
     --vermelho: #D13328;
     --roxo: #8a2be2;
+
+    --bg: url(../img/bg-chamada.gif) top 0 left 0 no-repeat;
 }
 
 :root.darkmode__ativo {
@@ -28,6 +30,8 @@
     --metal-2:#E8E8E8;
     --vermelho: #8a2be2;
     --roxo: #D13328;
+
+    --bg: url(../img/bg-chamada-dark.gif) top 0 left 0 no-repeat;
 }
 
 * {
@@ -48,6 +52,8 @@ body.darkmode__ativo {
     --metal-2:#E8E8E8;
     --vermelho: #8a2be2;
     --roxo: #D13328;
+
+    --bg: url(../img/bg-chamada-dark.gif) top 0 left 0 no-repeat;
 }
 
 
@@ -367,9 +373,10 @@ body.darkmode__ativo {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: url(../img/bg-chamada.gif) top 0px left 0px no-repeat;
+    background: var(--bg);
     background-size: 180vw 100vh;
     box-sizing: border-box;
+    transition: 0.5s;
 }
 
 .chamada .conteudo {
