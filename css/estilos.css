@@ -41,6 +41,8 @@
 body {
     margin-bottom: 3000px;
     overflow-x: hidden;
+
+    background: var(--branco-2);
 }
 
 body.darkmode__ativo {
@@ -52,8 +54,6 @@ body.darkmode__ativo {
     --metal-2:#E8E8E8;
     --vermelho: #8a2be2;
     --roxo: #D13328;
-
-    --bg: url(../img/bg-chamada-dark.gif) top 0 left 0 no-repeat;
 }
 
 
@@ -199,7 +199,8 @@ body.darkmode__ativo {
 /* -- CABECALHO 2 -- */
 
 .cabecalho-2 {
-    position: relative;
+    position: absolute;
+    width: 100%;
     background: transparent;
     display: flex;
     align-items: center;
@@ -365,7 +366,7 @@ body.darkmode__ativo {
 /* -- CHAMADA -- */
 
 .chamada {
-    position: absolute;
+    position: relative;
     top: 0;
     min-height: 100vh;
     display: flex;
@@ -431,50 +432,25 @@ body.darkmode__ativo {
     /* text-transform: uppercase; */
 }
 
+/* -- UM POUCO SOBRE NÓS -- */
 
+.sobre {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: var(--font-sub-titulo);
+}
 
+.sobre div {
+    display: flex;
+    /* justify-content: ; */
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.sobre div h2 {
+    font-size: var(--font-sub-titulo);
+}
 
 /* -- MODAL DARK MODE -- */
 
