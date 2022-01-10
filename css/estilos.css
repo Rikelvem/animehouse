@@ -35,7 +35,6 @@
 }
 
 body {
-    background: #D13328;
     margin-bottom: 3000px;
     overflow-x: hidden;
 }
@@ -337,6 +336,24 @@ body.darkmode__ativo {
     line-height: 55px;
     white-space: normal;
 }
+
+.menu__lista .redes  {
+    color: #FFF;
+    font-size: 64px;
+    position: absolute;
+    top: 60vh;
+}
+
+.menu__lista .redes .icone-git {
+    position: absolute;
+    left: 60px;
+}
+
+.menu__lista .redes .icone-in {
+    position: absolute;
+    left: 160px;
+}
+
 
 /* -- CHAMADA -- */
 
