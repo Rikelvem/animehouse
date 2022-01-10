@@ -200,14 +200,15 @@ body.darkmode__ativo {
     flex-direction: row;
     justify-content: space-between;
     padding: 24px 32px;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 10;
 }
 
 .cabecalho-2 h2 {
     font-family: var(--font-titulo);
     color: #FFF;
     font-size: 32px;
-    font-weight: 700;
+    text-transform: uppercase;
 }
 
 .menu__botao {
@@ -269,7 +270,7 @@ body.darkmode__ativo {
     right: 0px;
     width: 280px;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.9);
     box-sizing: initial;
     border-right: 5px solid rgba(255, 255, 255, 1);
     transition: 0.5s;
@@ -357,14 +358,71 @@ body.darkmode__ativo {
 
 /* -- CHAMADA -- */
 
+.chamada {
+    position: absolute;
+    top: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url(../img/bg-chamada.gif) top 0px left 0px no-repeat;
+    background-size: 180vw 100vh;
+    box-sizing: border-box;
+}
+
+.chamada .conteudo {
+    background: rgba(0, 0, 0, 0.7);
+    background-size: 100% 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 32px;
+}
+
+.chamada .conteudo h1 {
+    font-family: var(--font-titulo);
+    font-size: 48px;
+    color: var(--vermelho);
+    line-height: 80px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.chamada .conteudo h2 {
+    font-family: var(--font-sub-titulo);
+    color: #FFF;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.chamada .conteudo p {
+    color: #FFF;
+    font-family: var(--font-corpo);
+    font-size: 32px;
+}
+
+.chamada .conteudo .resumo {
+    font-size: 18px;
+    font-family: var(--font-corpo);
+    margin-bottom: 40px;
+}
 
 
-
-
-
-
-
-
+.chamada .conteudo a button {
+    background: var(--vermelho);
+    width: 225px;
+    height: 50px;
+    border-radius: 5px;
+    font-family: var(--font-titulo);
+    color: #FFF;
+    /* font-weight: 800; */
+    font-size: 18px;
+    /* text-transform: uppercase; */
+}
 
 
 
