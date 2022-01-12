@@ -54,6 +54,8 @@ body.darkmode__ativo {
     --metal-2:#E8E8E8;
     --vermelho: #8a2be2;
     --roxo: #D13328;
+
+    --bg: url(../img/bg-chamada-dark.gif) top 0 left 0 no-repeat;
 }
 
 
@@ -378,6 +380,7 @@ body.darkmode__ativo {
     background-size: 180vw 100vh;
     box-sizing: border-box;
     transition: 0.5s;
+    width: 100%;
 }
 
 .chamada .conteudo {
@@ -389,6 +392,7 @@ body.darkmode__ativo {
     justify-content: center;
     align-items: center;
     padding: 16px 32px;
+    width: 100%;
 }
 
 .chamada .conteudo h1 {
