@@ -449,11 +449,11 @@ body.darkmode__ativo {
 
 .sobre div {
     display: flex;
-    /* justify-content: ; */
+    
 }
 
 .sobre div h2 {
-    font-size: var(--font-sub-titulo);
+    font-family: var(--font-sub-titulo);
 }
 
 /* -- MODAL DARK MODE -- */
