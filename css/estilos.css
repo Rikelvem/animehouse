@@ -15,6 +15,7 @@
     --roxo: #8a2be2;
 
     --bg: url(../img/bg-chamada.gif) top 0 left 0 no-repeat;
+    --bg-sobre: #e8e8e8;
 }
 
 :root.darkmode__ativo {
@@ -30,8 +31,9 @@
     --metal-2:#E8E8E8;
     --vermelho: #8a2be2;
     --roxo: #D13328;
-
+    
     --bg: url(../img/bg-chamada-dark.gif) top 0 left 0 no-repeat;
+    --bg-sobre: #0e0e0e;
 }
 
 * {
@@ -56,6 +58,7 @@ body.darkmode__ativo {
     --roxo: #D13328;
 
     --bg: url(../img/bg-chamada-dark.gif) top 0 left 0 no-repeat;
+    --bg-sobre: #0e0e0e;
 }
 
 
@@ -444,16 +447,45 @@ body.darkmode__ativo {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    font-size: var(--font-sub-titulo);
+    background: var(--bg-sobre);
+    box-sizing: border-box;
 }
 
-.sobre div {
-    display: flex;
-    
-}
-
-.sobre div h2 {
+.sobre div h3 {
+    color: var(--preto);
     font-family: var(--font-sub-titulo);
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: absolute;
+    top: 80px;
+    left: 55px;
+    padding-bottom: 10px;
+    border-bottom: 6px solid var(--vermelho);
+    border-radius: 5px;
+}
+
+.sobre div .conteudo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-corpo);
+}
+
+.sobre div .conteudo details {
+    display: block;
+    width: 100%;
+}
+
+.sobre div .conteudo summary {
+    position: relative;
+    background-color: var(--branco-2);
+    list-style: none;
+    width: 300px;
+    line-height: 80px;
+    box-sizing: border-box;
 }
 
 /* -- MODAL DARK MODE -- */
