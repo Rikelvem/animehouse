@@ -65,6 +65,14 @@ for (let i=0; i<listaMenu.length; i++){
     }
 }
 
+// DETAILS IMPROVISADO
+
+const detailsImprovisado = document.querySelector('.details');
+document.querySelector('.conteudo__details').onclick = function() {
+    this.classList.toggle('aberto');
+    detailsImprovisado.classList.toggle('aberto');
+}
+
 // TOGGLE DARKMODE
 
 const body = document.querySelector('body');
