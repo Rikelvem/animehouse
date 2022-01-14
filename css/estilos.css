@@ -452,14 +452,13 @@ body.darkmode__ativo {
 }
 
 .sobre h3 {
-    position: relative;
     color: var(--preto);
     font-family: var(--font-sub-titulo);
     font-size: 28px;
     text-transform: uppercase;
     font-weight: 600;
     position: absolute;
-    top: 80px;
+    top: 60px;
     left: 55px;
     padding-bottom: 10px;
     border-bottom: 6px solid var(--vermelho);
@@ -476,6 +475,12 @@ body.darkmode__ativo {
     font-family: var(--font-sub-titulo);
     transition: 0.5s;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.10);
+}
+
+.sobre .details.criacao {
+    position: absolute;
+    top: 180px;
+    left: 30px;
 }
 
 .sobre .details.aberto {
