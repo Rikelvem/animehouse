@@ -477,12 +477,6 @@ body.darkmode__ativo {
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.10);
 }
 
-.sobre .details.criacao {
-    position: absolute;
-    top: 180px;
-    left: 30px;
-}
-
 .sobre .details.aberto {
     height: 500px;
     border:2px solid;
@@ -555,6 +549,12 @@ body.darkmode__ativo {
     border-radius: 5px;
 }
 
+.sobre .details .conteudo__sec.git .logo__git {
+    color: var(--preto);
+    font-size: 175px;
+    margin: none;
+}
+
 .sobre .details .conteudo__sec h5 {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -569,6 +569,10 @@ body.darkmode__ativo {
     line-height: 17px;
     margin-bottom: 10px;
     color: var(--preto);
+}
+
+.sobre .details .conteudo__sec.git p {
+    min-width: 280px;
 }
 
 .sobre .details .conteudo__sec span {
@@ -590,10 +594,18 @@ body.darkmode__ativo {
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.10);
 }
 
+.sobre .details .conteudo__sec.git a {
+    background: var(--preto);
+}
+
 .sobre .details .conteudo__sec a ion-icon {
     font-size: 24px;
     color: #FFF;
     margin-left: 16px;
+}
+
+.sobre .details .conteudo__sec.git a ion-icon {
+    color: var(--branco);
 }
 
 .sobre .details .conteudo__sec a button {
@@ -602,6 +614,14 @@ body.darkmode__ativo {
     color: #FFF;
     font-family: var(--font-titulo);
     margin-left: 10px;
+}
+
+.sobre .details .conteudo__sec.git a button {
+    color: var(--branco);
+}
+
+.sobre .details .conteudo__sec.criacao {
+    display: none;
 }
 
 /* -- MODAL DARK MODE -- */
