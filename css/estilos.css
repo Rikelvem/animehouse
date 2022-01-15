@@ -497,6 +497,14 @@ body.darkmode__ativo {
     border-top-right-radius: 4px;
 }
 
+.sobre .conteudo__details.criacao {
+    display: none;
+}
+
+.sobre .conteudo__details.git {
+    display: none;
+}
+
 .sobre .conteudo__details::before {
     content: '+';
     font-weight: 400;
@@ -555,6 +563,12 @@ body.darkmode__ativo {
     margin: none;
 }
 
+.sobre .details .conteudo__sec.projetos .logo__game {
+    color: var(--preto);
+    font-size: 155px;
+    margin: none;
+}
+
 .sobre .details .conteudo__sec h5 {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -598,6 +612,11 @@ body.darkmode__ativo {
     background: var(--preto);
 }
 
+.sobre .details .conteudo__sec.projetos a {
+    background: var(--vermelho);
+    width: 145px;
+}
+
 .sobre .details .conteudo__sec a ion-icon {
     font-size: 24px;
     color: #FFF;
@@ -621,6 +640,10 @@ body.darkmode__ativo {
 }
 
 .sobre .details .conteudo__sec.criacao {
+    display: none;
+}
+
+.sobre .details .conteudo__sec.git {
     display: none;
 }
 
