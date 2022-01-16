@@ -67,11 +67,50 @@ for (let i=0; i<listaMenu.length; i++){
 
 // DETAILS IMPROVISADO
 
-const detailsImprovisado = document.querySelector('.details');
-document.querySelector('.conteudo__details').onclick = function() {
-    this.classList.toggle('aberto');
-    detailsImprovisado.classList.toggle('aberto');
-}
+// const detailsImprovisado = document.querySelector('.details.git');
+// document.querySelector('.conteudo__details.git').onclick = function() {
+//     this.classList.toggle('aberto');
+//     detailsImprovisado.classList.toggle('aberto');
+// }
+
+// SOBRE CARROSSEL
+
+const slides = document.querySelectorAll('.details');
+const botaoNext = document.querySelector('.carrossel__next');
+const botaoAfter = document.querySelector('.carrossel__after');
+
+let proximoSlide = 0
+
+botaoNext.addEventListener ('click', () => {
+    if (proximoSlide === slides.length - 1){
+        proximoSlide = 0
+    }
+    else {
+        proximoSlide++
+    }
+
+    slides.forEach(slide => {
+        slide.classList.remove('visivel');
+        console.log('asdasda')
+    })
+
+    slides[proximoSlide].classList.add('visivel');
+})
+
+botaoAfter.addEventListener('click', () => {
+    if (proximoSlide === 0 ){
+        proximoSlide = slides.length -1
+    }
+    else {
+        proximoSlide--
+    }
+
+    slides.forEach(slide => {
+        slide.classList.remove('visivel');
+    })
+
+    slides[proximoSlide].classList.add('visivel');
+})
 
 // TOGGLE DARKMODE
 

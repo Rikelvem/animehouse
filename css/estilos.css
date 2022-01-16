@@ -61,6 +61,16 @@ body.darkmode__ativo {
     --bg-sobre: #0e0e0e;
 }
 
+@keyframes alteracaoSlide {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 
 /* -- MENU BOLADO -- */
 
@@ -441,6 +451,13 @@ body.darkmode__ativo {
 
 /* -- UM POUCO SOBRE NÓS -- */
 
+.carrossel {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+}
+
 .sobre {
     position: relative;
     display: flex;
@@ -465,6 +482,21 @@ body.darkmode__ativo {
     border-radius: 5px;
 }
 
+.sobre .botoes {
+    position: absolute;
+    font-size: 32px;
+}
+
+.sobre .botoes button.carrossel__next {
+    position: absolute;
+    left: 110px;
+}
+
+.sobre .botoes button.carrossel__after {
+    position: absolute;
+    right: 110px;
+}
+
 .sobre .details {
     position: relative;
     width: 320px;
@@ -475,6 +507,14 @@ body.darkmode__ativo {
     font-family: var(--font-sub-titulo);
     transition: 0.5s;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.10);
+    margin: auto 20px;
+    display: none;
+    transition: 0.5s;
+}
+
+.sobre .details.visivel {
+    display: block;
+    animation: alteracaoSlide 0.5s;
 }
 
 .sobre .details.aberto {
@@ -495,14 +535,7 @@ body.darkmode__ativo {
     overflow: hidden;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
-}
-
-.sobre .conteudo__details.criacao {
-    display: none;
-}
-
-.sobre .conteudo__details.git {
-    display: none;
+    transition: 0.5s;
 }
 
 .sobre .conteudo__details::before {
@@ -549,6 +582,10 @@ body.darkmode__ativo {
     justify-content: center;
     text-align: center;
     font-family: var(--font-corpo);
+}
+
+.sobre .details .conteudo__sec.projetos {
+    padding-top: 35px;
 }
 
 .sobre .details .conteudo__sec img {
@@ -637,14 +674,6 @@ body.darkmode__ativo {
 
 .sobre .details .conteudo__sec.git a button {
     color: var(--branco);
-}
-
-.sobre .details .conteudo__sec.criacao {
-    display: none;
-}
-
-.sobre .details .conteudo__sec.git {
-    display: none;
 }
 
 /* -- MODAL DARK MODE -- */
