@@ -41,7 +41,6 @@
 }
 
 body {
-    margin-bottom: 3000px;
     overflow-x: hidden;
 
     background: var(--branco-2);
@@ -304,7 +303,7 @@ body.darkmode__ativo {
     top: 88px;
     right: 0px;
     width: 280px;
-    height: 100vh;
+    height: 91vh;
     background: rgba(0, 0, 0, 0.9);
     box-sizing: initial;
     border-right: 5px solid rgba(255, 255, 255, 1);
@@ -688,6 +687,49 @@ body.darkmode__ativo {
 
 .sobre .details .conteudo__sec.git a button {
     color: var(--branco);
+}
+
+/* -- RODAPE -- */
+
+.rodape__conteudo {
+    background: var(--preto);
+    background-size: 100%;
+    width: 100%;
+    height: 40vw;
+    position: sticky;
+    z-index: 4000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rodape__conteudo div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(3px);
+}
+
+.rodape__conteudo div .rodape__titulo {
+    font-family: var(--font-titulo);
+    text-transform: uppercase;
+    font-size: 32px;
+    color: var(--vermelho);
+    font-weight: 800;
+}
+
+.rodape__conteudo div a {
+    color: #FFF;
+    font-family: var(--font-corpo);
+    line-height: 45px;
+}
+
+.rodape__conteudo div a i::before {
+    content: "\00A9";
 }
 
 /* -- MODAL DARK MODE -- */
