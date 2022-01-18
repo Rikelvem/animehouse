@@ -857,7 +857,6 @@ body.darkmode__ativo {
 /* -- CHAMADA -- */
 
 .login {
-    position: relative;
     width: 100%;
     height: 100vh;
     position: relative;
@@ -877,12 +876,10 @@ body.darkmode__ativo {
 }
 
 .login div .titulo {
-    position: absolute;
-    top: -200px;
-    left: 70px;
     display: flex;
     align-items: flex-start;
     box-sizing: border-box;
+    margin-bottom: 50px;
 }
 
 .login div .titulo span {
@@ -908,10 +905,55 @@ body.darkmode__ativo {
     position: relative;
 }
 
-.login div form label {
-    display: flex;
+.login div form div {
+    position: relative;
 }
 
-.login div form input {
-    width: 320px;
+.login div form div span {
+    position: absolute;
+    left: 10px;
+    font-size: 20px;
 }
+
+.login div form div span.icon-user {
+    top: 34px;
+}
+
+.login div form div span.icon-lock {
+    bottom: 50px;
+}
+
+.login div form div label {
+    display: flex;
+    align-self: flex-start;
+    margin-bottom: 15px;
+    padding-left: 16px;
+}
+
+.login div form div input {
+    width: 320px;
+    height: 30px;
+    padding-left: 36px;
+    background: none;
+    border-bottom: 1px solid var(--preto);
+    margin-bottom: 45px;
+}
+
+.login div form .entrar {
+    width: 125px;
+    height: 40px;
+    background: var(--vermelho);
+    color: #FFF;
+    font-family: var(--font-titulo);
+    border-radius: 4px;
+}
+
+.login div form .criar {
+    width: 125px;
+    height: 40px;
+    background: var(--vermelho);
+    color: #FFF;
+    font-family: var(--font-titulo);
+    border-radius: 4px;
+}
+
