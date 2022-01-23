@@ -43,7 +43,7 @@
 body {
     overflow-x: hidden;
 
-    background: var(--branco-2);
+    background: var(--branco);
 }
 
 body.darkmode__ativo {
@@ -57,7 +57,7 @@ body.darkmode__ativo {
     --roxo: #D13328;
 
     --bg: url(../img/bg-chamada-dark.gif) top 0 left 0 no-repeat;
-    --bg-sobre: #0e0e0e;
+    --bg-sobre: #292929;
 }
 
 @keyframes alteracaoSlide {
@@ -387,6 +387,46 @@ body.darkmode__ativo {
 .menu__lista .redes .icone-in {
     position: absolute;
     left: 160px;
+}
+
+#toggle {
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 40px;
+    border-radius: 160px;
+    background: var(--branco-2);
+    margin-bottom: 50px;
+    transition: 0.5s;
+    box-shadow: inset 0px 8px 60px rgba(0, 0, 0, 0.1),
+                inset 0px 8px 8px rgba(0, 0, 0, 0.1),
+                inset 0px -4px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    left: 50px;
+    top: 20px;
+}
+
+#toggle .indicador__darkmode {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(to bottom, var(--branco-2), var(--branco));
+    border-radius: 50%;
+    transform: scale(0.9);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
+                inset 0 4px 4px rgba(255, 255, 255, 1),
+                inset 0 -4px 4px rgba(255, 255, 255, 1);
+    transition: 0.5s;
+}
+
+#toggle.darkmode__ativo .indicador__darkmode {
+    left: 60px;
+    background: var(--branco);
+    box-shadow: 0 8px 60px rgba(0, 0, 0, 0.5),
+                inset 0 8px 8px rgba(0, 0, 0, 0.2),
+                inset 0 -4px 4px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -723,7 +763,7 @@ body.darkmode__ativo {
 }
 
 .rodape__conteudo div a {
-    color: #FFF;
+    color: var(--branco);
     font-family: var(--font-corpo);
     line-height: 45px;
 }
