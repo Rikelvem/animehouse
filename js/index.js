@@ -114,17 +114,18 @@ botaoAfter.addEventListener('click', () => {
 
 // TOGGLE DARKMODE
 
-const body = document.querySelector('body');
-const toggle = document.getElementById('toggle');
-toggle.onclick = function(){
-    toggle.classList.toggle('darkmode__ativo');
-    body.classList.toggle('darkmode__ativo');
+// const body = document.querySelector('body');
+// const toggle = document.querySelector('.toggle');
+// toggle.addEventListener('click', () => {
+//     toggle.classList.toggle('darkmode__ativo');
+//     body.classList.toggle('darkmode__ativo');
+// })
 //     localStorage.classList = 'darkmode__ativo';
 //     if(toggle){
 //         localStorage.classList == 'darkmode__ativo';
 //         body.classList.add('darkmode__ativo');
 //     }
-}
+
 
 // MODAL BOLADO
 

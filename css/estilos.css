@@ -389,7 +389,7 @@ body.darkmode__ativo {
     left: 160px;
 }
 
-#toggle {
+/* .toggle {
     position: relative;
     display: block;
     width: 100px;
@@ -406,7 +406,7 @@ body.darkmode__ativo {
     top: 20px;
 }
 
-#toggle .indicador__darkmode {
+.toggle .indicador__darkmode {
     position: absolute;
     top: 0;
     left: 0;
@@ -421,13 +421,13 @@ body.darkmode__ativo {
     transition: 0.5s;
 }
 
-#toggle.darkmode__ativo .indicador__darkmode {
+.toggle.darkmode__ativo .indicador__darkmode {
     left: 60px;
     background: var(--branco);
     box-shadow: 0 8px 60px rgba(0, 0, 0, 0.5),
                 inset 0 8px 8px rgba(0, 0, 0, 0.2),
                 inset 0 -4px 4px rgba(0, 0, 0, 0.2);
-}
+} */
 
 
 /* -- CHAMADA -- */
@@ -997,3 +997,16 @@ body.darkmode__ativo {
     border-radius: 4px;
 }
 
+.login .create {
+    display: flex;
+    position: relative;
+    margin-top: 30px;
+    font-family: var(--font-corpo);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.login .create p .create-link {
+    color: var(--vermelho);
+    text-decoration: underline;
+}
