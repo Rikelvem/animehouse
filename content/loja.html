@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loja | Anime House</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto+Condensed:wght@400;700&family=Spline+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <script src="../js/index.js" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
 </head>
 <body>
     <header class="cabecalho-2">
@@ -25,7 +33,7 @@
                     </a>
                 </li>
                 <li class="lista__menu">
-                    <a href="#">
+                    <a href="perfil.html">
                         <span class="icone__menu">
                             <ion-icon name="person-outline"></ion-icon>
                         </span>
@@ -69,5 +77,22 @@
             </a>
         </div>
     </header>
+    <main>
+        <section class="loja-pesquisas">
+            <div class="teste">
+                <h5>Sinta-se à vontade 
+                    <br>
+                    em nossa loja!</h5>
+                <form>
+                    <div>
+                        <input type="text" placeholder="Pesquise algum item..." id="pesquisar-loja">
+                        <label for="pesquisar-loja">
+                            <ion-icon name="search-sharp"></ion-icon>
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
