@@ -149,3 +149,5 @@ document.addEventListener('scroll', () => {
         iniciaModal('modal__mensagem');
     }
 })
+
+// PESQUISA ITENS LOJA
