@@ -1152,7 +1152,8 @@ body.darkmode__ativo {
     font-weight: 700;
     font-family: var(--font-titulo);
     border-radius: 4px;
-    box-shadow: rgba(0, 0, 0, 0.06);
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.06);
+
 }
 
 
